@@ -1,0 +1,38 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+#nav{
+    height: 75px;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#nav>a{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-decoration: none;
+}
+#footer{
+    bottom: 0;
+    position: fixed;
+    height: 50px;
+    width: 100%;
+    background-color: black;
+}
+#home{
+    height: 85vh;
+    background: linear-gradient(white,rgb(23, 146, 173));
+    width: 100%;
+}
+.conrainer{
+    width: 80%;
+    background: linear-gradient(white,#28da87);
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Student Management System</title>
+<link rel="stylesheet"
+	href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+	integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+	crossorigin="anonymous">
+</head>
+<body>
+<div class="container">
+<div class="row"><h3>Update Employee</h3></div>
+ <form th:action="@{/employee/save/{id} (id=${employee.id})}" th:object="${employee}" method="post">
+<div class="form-group">
+<label>Enter The Employee Name</label>
+<input type="text" name="name" th:field="*{name}" class="form-control" placeholder="Enter The Employee Name">
+</div> 
+
+<div class="form-group">
+<label>Enter The Employee Salary</label>
+<input type="text" name="salary" th:field="*{salary}" class="form-control" placeholder="Enter The Employee Salary">
+</div> 
+
+<div class="form-group">
+<label>Enter The Employee Company</label>
+<input type="text" name="company" th:field="*{company}" class="form-control" placeholder="Enter The Employee Company">
+</div> 
+
+<button type="submit" class="btn btn-primary">Update</button>
+
+</form>
+</div>
+
+</body>
+</html>
